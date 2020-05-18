@@ -1,12 +1,14 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>OU Walking Club: Create Walk</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="add-walk.js"></script>
+    <meta charset="utf-8">
+    <title>OU Walking Club: Create Walk</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="add-walk.js"></script>
 </head>
+
 <body>
     <div id="container">
         <div id="form-container">
@@ -16,29 +18,34 @@
                 <h2>Walk Information</h2>
                 <div id="walk-information">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" placeholder="Name">
                     <label for="meeting-point">Meeting point</label>
-                    <input type="text" id="meeting-point" name="meeting-point">
+                    <input type="text" id="meeting-point" name="meeting-point" placeholder="e.g. Watcombe Car park">
                     <label for="distance">Distance(miles)</label>
-                    <input type="text" id="distance" name="distance">
+                    <input type="text" id="distance" name="distance" placeholder="e.g. 9">
                 </div>
                 <h2>Time and Date information</h2>
                 <div id="time-and-date-info">
                     <label for="day">Date of Walk</label>
-                    <select id="day" name="day"></select>
-                    <select id="month" name="month"></select>
-                    <select id="year" name="year"></select>
+                    <div id="date-select-container">
+                        <select id="day" name="day"></select>
+                        <select id="month" name="month"></select>
+                        <select id="year" name="year"></select>
+                    </div>
                     <label for="start-time-first">Start time</label>
-                    <select id="start-time-first" name="first-start-time"></select>
-                    <select id="start-time-second" name="second-start-time"></select>
+                    <div id="time-select-container">
+                        <select id="start-time-first" name="first-start-time"></select>
+                        <select id="start-time-second" name="second-start-time"></select>
+                    </div>
                 </div>
                 <h2>Additional notes</h2>
                 <div id="additional-notes">
-                    <label for="notes"></label>
+                    <label for="notes">Notes</label>
                     <textarea id="notes" name="notes"></textarea>
                 </div>
-                <input type="checkbox" id="auto-approve" name="auto-approve">
-                <label for="auto-approve">Auto approve</label>
+
+                <label for="auto-approve"><input type="checkbox" id="auto-approve" name="auto-approve">Auto
+                    approve</label>
                 <button id="create-walk" type="submit">Create walk</button>
                 <button id="cancel-walk" type="button">Cancel</button>
             </form>
