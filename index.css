@@ -1,14 +1,18 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: #F8F8F8;
 }
 
 #form-container {
     margin: 0 auto;
     width: 40%;
-    border: 1px solid #002158;
     overflow: hidden;
     height: 100%;
+    background-color: #FFFFFF;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid #CCCCCC;
 }
 
 #form-container h1 {
@@ -170,6 +174,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: #FFFFFF;
 }
 
 #nav-container {
