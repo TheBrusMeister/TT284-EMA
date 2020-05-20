@@ -70,6 +70,9 @@ body {
     border: 1px solid #BBBBBB;
     margin-top: 8px;
     height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    resize: none;
 }
 
 #form-container input {
@@ -101,6 +104,11 @@ body {
     font-weight: 400;
     font-size: 16px;
     cursor: pointer;
+}
+
+#button-container button:hover {
+    background-color: #002158;
+    color: white;
 }
 
 #button-container #create-walk {
