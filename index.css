@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 #form-container {
@@ -7,7 +8,7 @@ body {
     width: 40%;
     border: 1px solid #002158;
     overflow: hidden;
-    height:100%;
+    height: 100%;
 }
 
 #form-container h1 {
@@ -73,6 +74,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     outline: none;
     resize: none;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #form-container input {
@@ -80,7 +83,7 @@ body {
 }
 
 #button-container {
-    padding:10px
+    padding: 10px
 }
 
 #auto-approve-container {
@@ -88,13 +91,13 @@ body {
 }
 
 #button-container, #auto-approve-container {
-    width:100%; 
+    width: 100%;
     float: right;
     text-align: right;
 }
 
 #button-container button {
-    padding:3px 10px;
+    padding: 3px 10px;
     background-color: #FFFFFF;
     text-decoration: none;
     border: 1px solid #002158;
@@ -148,4 +151,61 @@ body {
 #date-select-container select:last-child, #time-select-container select:last-child {
     flex: 1 1 0;
     margin-right: 0;
+}
+
+#icon-container .logo {
+    float: left;
+    display: block;
+    background-image: url(logo.png);
+    background-size: 55;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+#header {
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid #002158;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#nav-section {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#main-content {
+    margin-top: 100px;
+}
+
+nav { 
+    float: right;
+    margin: 20px 0;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #414042;
+    padding: 4px 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+nav .active {
+    background-color: #326fb4;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }

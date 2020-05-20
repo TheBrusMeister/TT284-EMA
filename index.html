@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" href="https://learn2.open.ac.uk/theme/image.php/osep/theme/1587028448/favicon">
     <title>OU Walking Club: Create Walk</title>
     <link rel="stylesheet" href="index.css">
     <script src="add-walk.js"></script>
@@ -11,47 +12,70 @@
 
 <body>
     <div id="container">
-        <div id="form-container">
-            <h1>Add Walk</h1>
-            <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
-                <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef">
-                <h2>Walk Information</h2>
-                <div id="walk-information">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Name">
-                    <label for="meeting-point">Meeting point</label>
-                    <input type="text" id="meeting-point" name="meeting-point" placeholder="e.g. Watcombe Car park">
-                    <label for="distance">Distance (miles)</label>
-                    <input type="text" id="distance" name="distance" placeholder="e.g. 9">
+        <div id="header">
+            <div id="nav-container">
+                <div id="icon-container">
+                    <a class="logo " href="#" title="The Open University Walking Club">
+                        <img src="logo.png" alt="The Open University">
+                    </a>
                 </div>
-                <h2>Time and Date Information</h2>
-                <div id="time-and-date-info">
-                    <label for="day">Date of Walk</label>
-                    <div id="date-select-container">
-                        <select id="day" name="day"></select>
-                        <select id="month" name="month"></select>
-                        <select id="year" name="year"></select>
+                <div id="nav-section">
+                    <nav>
+                        <a href="#">Admin Home</a>
+                        <a href="#">Members</a>
+                        <a href="#" class="active">Walks</a>
+                        <a href="#">Events</a>
+                        <a href="#">Announcements</a>
+                        <a href="#">News</a>
+                        <a href="#">Sign out</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="main-content">
+            <div id="form-container">
+                <h1>Add Walk</h1>
+                <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
+                    <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef">
+                    <h2>Walk Information</h2>
+                    <div id="walk-information">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <label for="meeting-point">Meeting point</label>
+                        <input type="text" id="meeting-point" name="meeting-point" placeholder="e.g. Watcombe Car park">
+                        <label for="distance">Distance (miles)</label>
+                        <input type="text" id="distance" name="distance" placeholder="e.g. 9">
                     </div>
-                    <label for="start-time-hour">Start time</label>
-                    <div id="time-select-container">
-                        <select id="start-time-hour" name="start-time-hour"></select>
-                        <select id="start-time-minutes" name="start-time-minutes"></select>
-                        <select id="start-time-ampm" name="start-time-ampm"></select>
+                    <h2>Time and Date Information</h2>
+                    <div id="time-and-date-info">
+                        <label for="day">Date of Walk</label>
+                        <div id="date-select-container">
+                            <select id="day" name="day"></select>
+                            <select id="month" name="month"></select>
+                            <select id="year" name="year"></select>
+                        </div>
+                        <label for="start-time-hour">Start time</label>
+                        <div id="time-select-container">
+                            <select id="start-time-hour" name="start-time-hour"></select>
+                            <select id="start-time-minutes" name="start-time-minutes"></select>
+                            <select id="start-time-ampm" name="start-time-ampm"></select>
+                        </div>
                     </div>
-                </div>
-                <h2>Additional Notes</h2>
-                <div id="additional-notes">
-                    <label for="notes">Notes</label>
-                    <textarea id="notes" name="notes" placeholder="Notes go here"></textarea>
-                </div>
-                <div id="auto-approve-container">
-                    <label for="auto-approve"><input type="checkbox" id="auto-approve" name="auto-approve"/>Auto approve</label>
-                </div>
-                <div id="button-container">
-                    <button id="cancel-walk" type="button">Cancel</button>
-                    <button id="create-walk" type="submit">Create walk</button>
-                </div>
-            </form>
+                    <h2>Additional Notes</h2>
+                    <div id="additional-notes">
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" placeholder="Notes go here"></textarea>
+                    </div>
+                    <div id="auto-approve-container">
+                        <label for="auto-approve"><input type="checkbox" id="auto-approve" name="auto-approve" />Auto
+                            approve</label>
+                    </div>
+                    <div id="button-container">
+                        <button id="cancel-walk" type="button">Cancel</button>
+                        <button id="create-walk" type="submit">Create walk</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
