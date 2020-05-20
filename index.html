@@ -34,8 +34,9 @@
                     </div>
                     <label for="start-time-first">Start time</label>
                     <div id="time-select-container">
-                        <select id="start-time-first" name="first-start-time"></select>
-                        <select id="start-time-second" name="second-start-time"></select>
+                        <select id="start-time-hour" name="start-time-hour"></select>
+                        <select id="start-time-minutes" name="start-time-minutes"></select>
+                        <select id="start-time-ampm" name="start-time-ampm"></select>
                     </div>
                 </div>
                 <h2>Additional notes</h2>
@@ -43,11 +44,13 @@
                     <label for="notes">Notes</label>
                     <textarea id="notes" name="notes"></textarea>
                 </div>
-
-                <label for="auto-approve"><input type="checkbox" id="auto-approve" name="auto-approve">Auto
-                    approve</label>
-                <button id="create-walk" type="submit">Create walk</button>
-                <button id="cancel-walk" type="button">Cancel</button>
+                <div id="auto-approve-container">
+                    <label for="auto-approve"><input type="checkbox" id="auto-approve" name="auto-approve">Auto approve</label>
+                </div>
+                <div id="button-container">
+                    <button id="cancel-walk" type="button">Cancel</button>
+                    <button id="create-walk" type="submit">Create walk</button>
+                </div>
             </form>
         </div>
     </div>
