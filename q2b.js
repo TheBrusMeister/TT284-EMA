@@ -92,7 +92,24 @@ function addOptionToSelect(select, option) {
     select.add(optionElement);
 }
 
+function onClickShowMobileNav(){
+    var hamburgerA = document.querySelector("#mobile-navigation a.icon");
+    hamburgerA.addEventListener("click", () => {
+        var mobileLinks = document.querySelector("#mobile-nav");
+        if(mobileLinks.style.display == "block"){
+            mobileLinks.style.display = "none";
+            hamburgerA.style.backgroundColor = "#FFFFFF";
+            hamburgerA.style.color = "#0b55a8";
+        } else {
+            mobileLinks.style.display = "block";
+            hamburgerA.style.backgroundColor = "#0b55a8";
+            hamburgerA.style.color = "#FFFFFF";
+        }
+    });
+}
+
 
 window.onload = function () {
     populate();
+    onClickShowMobileNav();
 }
