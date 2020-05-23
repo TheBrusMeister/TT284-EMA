@@ -27,6 +27,11 @@ body {
     #mobile-navigation { 
         display: none;
     }
+
+    nav {
+        float: right;
+        margin: 20px 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -36,6 +41,11 @@ body {
 
     #mobile-navigation {
         display: block;
+    }
+
+    nav { 
+        float: none;
+        margin: 0;
     }
 }
 
@@ -209,11 +219,6 @@ body {
     margin-top: 100px;
 }
 
-nav {
-    float: right;
-    margin: 20px 0;
-}
-
 nav a {
     margin-right: 10px;
     text-decoration: none;
@@ -250,7 +255,7 @@ nav a:hover {
     background: #0b55a8;
     color: #FFFFFF;
 }
-#mobile-navigation a:not(.icon) {
+#mobile-navigation nav a:not(.icon) {
     color: #0b55a8;
     padding: 14px 16px;
     text-decoration: none;
@@ -259,7 +264,7 @@ nav a:hover {
     border-bottom: 1px solid #CCCCCC;
 }
 
-#mobile-navigation a.active {
+#mobile-navigation nav a.active {
     background-color: #326fb4;
     color: #fff;
 }
